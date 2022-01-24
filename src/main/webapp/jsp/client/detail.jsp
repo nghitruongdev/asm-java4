@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,11 +7,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHI TIẾT VIDEO</title>
+    <title>VIDEO PAGE</title>
     <style>
         #main-video {
             width: 70%;
-            height: 650px;
+            height: 590px;
         }
 
         #side-bar {
@@ -24,19 +26,19 @@
 </head>
 
 <body>
-    <header></header>
-    <nav></nav>
+    <c:import url="nav-login.jsp"/>
+
     <main class="container-fluid  d-flex">
         <div class="container-fluid mx-2 sticky-top mt-2" id="main-video">
             <div class="h-75">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SH_Ib4rVuO8"
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ddaEtFOsFeM"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
             <div class="h-25">
                 <div class="py-1 bg-light mt-2 border px-2 rounded-3">
-                    <h2>Top love song 2021 playlist</h2>
+                    <h2>Đen ft. MIN - Bài Này Chill Phết (M/V)</h2>
                 </div>
                 <div class="bg-light border  mt-1 h-50">
                     <p class="text-dark mt-1 mx-2">Follow me for more videos like this </p>
@@ -48,74 +50,17 @@
             </div>
         </div>
         <div class="mx-3" id="side-bar">
-            <h4>WATCH MORE VIDEOS</h4>
+            <h4 class="bg-light py-3 text-center">WATCH MORE VIDEOS</h4>
+            <% for (int i = 0; i < 20; i++) { %>
             <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
+<%--                https://www.youtube.com/watch?v=UVbv-PJXm14--%>
+                <div class="col">
+                    <a href="detail"><img class="img-fluid" src="http://i3.ytimg.com/vi/UVbv-PJXm14/hqdefault.jpg" alt=""></a>
                 </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
+                <div class="col-7  d-flex align-items-center"><h6>Mang tiền về cho mẹ <br><br> Đen Vâu</h6>
                 </div>
             </div>
-
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
-            <div class="row mt-2 border rounded py-1">
-                <div class="col"><img class="img-fluid  my-1" src="img/preview.png" alt="">
-                </div>
-                <div class="col-7  d-flex align-items-center"><h6>Let's Hurt Tonight <br><br> OneRepublic</h6>
-                </div>
-            </div>
+            <% }%>
         </div>
     </main>
     <footer></footer>
